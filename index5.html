@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        body {
+            background-color: rgb(16, 1, 158);
+            color: rgb(17, 11, 1);
+            font: normal 18pt Arial;
+            background-image: url('https://www.gta5.com.br/wp-content/uploads/2015/05/Motos-voam-no-mod-de-acelerar-carros-do-GTA-V1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        main {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        main #botao {
+            width: 120px;
+            height: 30px;
+            border-radius: 10%;
+            cursor: pointer;
+            background-color: rgb(255, 2, 2);
+            transition: 0.3s;
+        }
+
+        main #botao:hover {
+            background-color: rgb(160, 24, 53);
+        }
+
+        main h3 strong {
+            color: red;
+        }
+
+        div#res {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Sistema de Multas</h1>
+        <p>Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h</p>
+        <input id="botao" type="button" value="Verfificar" onclick="calcular()">
+        <div id="res"></div>
+    </main>
+
+    <script src="_js/detran.js"></script>
+</body>
+</html>
